@@ -42,11 +42,17 @@
             <Insets />
          </opaqueInsets>
       </Button>
-      <ComboBox fx:id="comboBoxoptions" layoutX="28.0" layoutY="139.0" onAction="#DESISTIR" prefHeight="25.0" prefWidth="689.0" promptText="Processos Seletivos Disponíveis" />
-      <Label alignment="CENTER" layoutX="28.0" layoutY="106.0" prefHeight="21.0" prefWidth="689.0" text="Selecione o Processo Seletivo que deseja se inscrever ">
+      <ComboBox fx:id="comboBoxoptions" layoutX="28.0" layoutY="257.0" onAction="#DESISTIR" prefHeight="25.0" prefWidth="689.0" promptText="Processos Seletivos Disponíveis" />
+      <Label alignment="CENTER" layoutX="28.0" layoutY="224.0" prefHeight="21.0" prefWidth="689.0" text="Selecione o Processo Seletivo que deseja se inscrever ">
          <font>
             <Font name="Calibri Bold" size="19.0" />
          </font>
       </Label>
+      <Label alignment="CENTER" layoutX="28.0" layoutY="112.0" prefHeight="21.0" prefWidth="689.0" text="Editais">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxoptions1" layoutX="28.0" layoutY="151.0" onAction="#DESISTIR" prefHeight="25.0" prefWidth="689.0" promptText="Editais dos Processos Seletivos Disponíveis" />
    </children>
 </AnchorPane>
