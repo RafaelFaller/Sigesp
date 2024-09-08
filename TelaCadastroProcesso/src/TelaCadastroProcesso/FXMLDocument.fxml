@@ -5,13 +5,14 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="14.0" prefHeight="37.0" prefWidth="594.0" text="UFC  - SIGESP - Sistema de Gerenciamento de Seleção de Pessoas e Projetos de Extensão">
          <font>
@@ -50,24 +51,24 @@
             <Font name="Calibri Bold" size="19.0" />
          </font>
       </Label>
-      <TextField layoutX="65.0" layoutY="170.0" prefHeight="25.0" prefWidth="339.0" />
-      <Label layoutX="64.0" layoutY="149.0" prefHeight="21.0" prefWidth="196.0" text="Nome do Projeto:">
+      <TextField layoutX="65.0" layoutY="226.0" prefHeight="25.0" prefWidth="339.0" promptText="Escreva o nome do projeto ou do processo seletivo" />
+      <Label layoutX="64.0" layoutY="205.0" prefHeight="21.0" prefWidth="196.0" text="Nome do Processo Seletivo:">
          <font>
             <Font name="Calibri" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="65.0" layoutY="207.0" prefHeight="21.0" prefWidth="196.0" text="Coordenador(a) 1:">
+      <Label layoutX="65.0" layoutY="263.0" prefHeight="21.0" prefWidth="196.0" text="Coordenador(a) 1:">
          <font>
             <Font name="Calibri" size="14.0" />
          </font>
       </Label>
-      <TextArea layoutX="65.0" layoutY="400.0" prefHeight="81.0" prefWidth="616.0" wrapText="true" />
-      <Label layoutX="66.0" layoutY="379.0" prefHeight="21.0" prefWidth="196.0" text="Descrição:">
+      <TextArea layoutX="65.0" layoutY="456.0" prefHeight="81.0" prefWidth="616.0" wrapText="true" />
+      <Label layoutX="66.0" layoutY="435.0" prefHeight="21.0" prefWidth="196.0" text="Descrição:">
          <font>
             <Font name="Calibri" size="14.0" />
          </font>
       </Label>
-      <Button cache="true" layoutX="331.0" layoutY="566.0" mnemonicParsing="false" text="CADASTRAR">
+      <Button cache="true" layoutX="331.0" layoutY="622.0" mnemonicParsing="false" text="CADASTRAR">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -84,8 +85,8 @@
             <Font name="Calibri" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="65.0" layoutY="512.0" prefHeight="25.0" prefWidth="616.0" promptText="Adicione o Edital ao drive e anexe aqui o link" />
-      <Label layoutX="64.0" layoutY="491.0" prefHeight="21.0" prefWidth="196.0" text="Anexe aqui o link do Edital:">
+      <TextField layoutX="65.0" layoutY="568.0" prefHeight="25.0" prefWidth="616.0" promptText="Adicione o Edital ao drive e anexe aqui o link" />
+      <Label layoutX="64.0" layoutY="547.0" prefHeight="21.0" prefWidth="196.0" text="Anexe aqui o link do Edital:">
          <font>
             <Font name="Calibri" size="14.0" />
          </font>
@@ -96,18 +97,20 @@
             <Font name="Calibri" size="14.0" />
          </font>
       </Label>
-      <ComboBox layoutX="65.0" layoutY="226.0" prefHeight="25.0" prefWidth="339.0" />
-      <Label layoutX="65.0" layoutY="264.0" prefHeight="21.0" prefWidth="196.0" text="Coordenador(a) 2:">
+      <ComboBox layoutX="65.0" layoutY="282.0" prefHeight="25.0" prefWidth="616.0" />
+      <Label layoutX="65.0" layoutY="320.0" prefHeight="21.0" prefWidth="196.0" text="Coordenador(a) 2:">
          <font>
             <Font name="Calibri" size="14.0" />
          </font>
       </Label>
-      <ComboBox layoutX="65.0" layoutY="283.0" prefHeight="25.0" prefWidth="339.0" />
-      <Label layoutX="65.0" layoutY="319.0" prefHeight="21.0" prefWidth="196.0" text="Coordenador(a) 3:">
+      <ComboBox layoutX="65.0" layoutY="339.0" prefHeight="25.0" prefWidth="616.0" />
+      <Label layoutX="65.0" layoutY="375.0" prefHeight="21.0" prefWidth="196.0" text="Coordenador(a) 3:">
          <font>
             <Font name="Calibri" size="14.0" />
          </font>
       </Label>
-      <ComboBox layoutX="65.0" layoutY="338.0" prefHeight="25.0" prefWidth="339.0" />
+      <ComboBox layoutX="65.0" layoutY="394.0" prefHeight="25.0" prefWidth="616.0" />
+      <RadioButton layoutX="62.0" layoutY="151.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="339.0" text="Cadastrar Processo de Pessoas" />
+      <RadioButton layoutX="62.0" layoutY="172.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="339.0" text="Cadastrar Processo de Projetos" />
    </children>
 </AnchorPane>
