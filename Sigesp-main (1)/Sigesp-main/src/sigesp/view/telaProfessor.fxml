@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sigesp.controller.TelaProfessorController">
+   <children>
+      <Label fx:id="titulo" layoutX="14.0" prefHeight="37.0" prefWidth="594.0" text="UFC  - SIGESP - Sistema de Gerenciamento de Seleção de Pessoas e Projetos de Extensão">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutY="36.0" prefHeight="0.0" prefWidth="744.0" />
+      <Separator layoutY="81.0" prefHeight="0.0" prefWidth="744.0" />
+      <Label fx:id="nomeLabel" layoutX="14.0" layoutY="36.0" prefHeight="21.0" prefWidth="148.0" text="Marcos Vinicius Amostrado">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLabel" layoutX="14.0" layoutY="57.0" prefHeight="21.0" prefWidth="196.0" text="marcosvinicuis@amostradinho.com">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="matriculaLabel" layoutX="174.0" layoutY="36.0" prefHeight="21.0" prefWidth="115.0" text="Siape: 5524070">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Button cache="true" layoutX="678.0" layoutY="45.0" mnemonicParsing="false" onAction="#carregarTelaLogin" text="SAIR">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button alignment="CENTER" cache="true" layoutX="51.0" layoutY="139.0" mnemonicParsing="false" onAction="#carregarTelaAcompanharCandidatura" prefHeight="60.0" prefWidth="123.0" text="Suas Candidaturas">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" cache="true" layoutX="215.0" layoutY="139.0" mnemonicParsing="false" onAction="#carregarTelaInscricao" prefHeight="60.0" prefWidth="123.0" text="Inscreva-se" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" cache="true" layoutX="389.0" layoutY="139.0" mnemonicParsing="false" onAction="#carregarTelaCadastrarProjeto" prefHeight="60.0" prefWidth="123.0" text="Cadastrar Projeto" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" cache="true" layoutX="555.0" layoutY="139.0" mnemonicParsing="false" onAction="#carregarTelaCadastroProcesso" prefHeight="60.0" prefWidth="123.0" text="Cadastrar Processo Seletivo" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" cache="true" layoutX="51.0" layoutY="239.0" mnemonicParsing="false" onAction="#carregarTelaAlterarProcesso" prefHeight="60.0" prefWidth="123.0" text="Gerenciamento de Processos Seletivos" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" cache="true" layoutX="215.0" layoutY="239.0" mnemonicParsing="false" onAction="#carregarTelaAlterarDadosUsuario" prefHeight="60.0" prefWidth="123.0" text="Gerenciar seu cadastro" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="pagEditais" alignment="CENTER" cache="true" layoutX="389.0" layoutY="239.0" mnemonicParsing="false" onAction="#carregarTelaAlterarDadosUsuario" prefHeight="60.0" prefWidth="123.0" text="Editais" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

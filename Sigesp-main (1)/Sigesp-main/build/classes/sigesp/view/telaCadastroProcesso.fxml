@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="sigesp.controller.CadastroProcessoController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="titulo" layoutX="14.0" prefHeight="37.0" prefWidth="594.0" text="UFC  - SIGESP - Sistema de Gerenciamento de Seleção de Pessoas e Projetos de Extensão">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutY="36.0" prefHeight="0.0" prefWidth="744.0" />
+      <Separator layoutY="81.0" prefHeight="0.0" prefWidth="744.0" />
+      <Label fx:id="nomeLabel" layoutX="14.0" layoutY="36.0" prefHeight="21.0" prefWidth="148.0" text="Marcos Vinicius Amostrado">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLabel" layoutX="14.0" layoutY="57.0" prefHeight="21.0" prefWidth="196.0" text="marcosvinicuis@amostradinho.com">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="matriculaLabel" layoutX="174.0" layoutY="36.0" prefHeight="21.0" prefWidth="115.0" text="Siape: 552407">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Button cache="true" layoutX="678.0" layoutY="45.0" mnemonicParsing="false" text="SAIR" onAction="#carregarTelaLogin">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button cache="true" layoutX="578.0" layoutY="45.0" mnemonicParsing="false" text="TELA INICIAL" onAction="#carregarTelaInicial">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Label alignment="CENTER" layoutX="17.0" layoutY="112.0" prefHeight="21.0" prefWidth="689.0" text="Cadastro de Processo Seletivo">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomeProcesso" layoutX="65.0" layoutY="226.0" prefHeight="25.0" prefWidth="339.0" promptText="Escreva o nome do projeto ou do processo seletivo" />
+      <Label layoutX="64.0" layoutY="205.0" prefHeight="21.0" prefWidth="196.0" text="Nome do Processo Seletivo:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Label  layoutX="65.0" layoutY="263.0" prefHeight="21.0" prefWidth="196.0" text="Coordenador(a) 1:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descricaoProcesso" layoutX="65.0" layoutY="456.0" prefHeight="81.0" prefWidth="616.0" wrapText="true" />
+      <Label layoutX="66.0" layoutY="435.0" prefHeight="21.0" prefWidth="196.0" text="Descrição:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Button cache="true" layoutX="331.0" layoutY="622.0" mnemonicParsing="false" text="CADASTRAR">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Label layoutX="435.0" layoutY="147.0" prefHeight="21.0" prefWidth="127.0" text="Início das inscrições:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dataInscricoes" layoutX="435.0" layoutY="168.0" prefHeight="25.0" prefWidth="115.0" />
+      <DatePicker fx:id="dataFimInscricoes" layoutX="562.0" layoutY="168.0" prefHeight="25.0" prefWidth="115.0" />
+      <Label layoutX="562.0" layoutY="149.0" prefHeight="21.0" prefWidth="134.0" text="Fim das inscrições:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="65.0" layoutY="568.0" prefHeight="25.0" prefWidth="616.0" promptText="Adicione o Edital ao drive e anexe aqui o link" />
+      <Label layoutX="64.0" layoutY="547.0" prefHeight="21.0" prefWidth="196.0" text="Anexe aqui o link do Edital:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numVagas" layoutX="436.0" layoutY="226.0" prefHeight="25.0" prefWidth="245.0" />
+      <Label layoutX="439.0" layoutY="205.0" prefHeight="21.0" prefWidth="196.0" text="Quantidade de Vagas:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="membroBanca1" layoutX="65.0" layoutY="282.0" prefHeight="25.0" prefWidth="616.0" />
+      <Label layoutX="65.0" layoutY="320.0" prefHeight="21.0" prefWidth="196.0" text="Coordenador(a) 2:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="membroBanca2" layoutX="65.0" layoutY="339.0" prefHeight="25.0" prefWidth="616.0" />
+      <Label layoutX="65.0" layoutY="375.0" prefHeight="21.0" prefWidth="196.0" text="Coordenador(a) 3:">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="membroBanca3" layoutX="65.0" layoutY="394.0" prefHeight="25.0" prefWidth="616.0" />
+      <RadioButton fx:id="oppcaoPessoas" layoutX="62.0" layoutY="151.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="339.0" text="Cadastrar Processo de Pessoas" />
+      <RadioButton fx:id="oppcaoProjetos" layoutX="62.0" layoutY="172.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="339.0" text="Cadastrar Processo de Projetos" />
+   </children>
+</AnchorPane>
